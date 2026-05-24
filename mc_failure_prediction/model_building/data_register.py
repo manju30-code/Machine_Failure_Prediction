@@ -20,9 +20,8 @@ except RepositoryNotFoundError:
     create_repo(repo_id=repo_id, repo_type=repo_type, private=False)
     print(f"Space '{repo_id}' created.")
 
-api.upload_file(
-    path_or_fileobj="mc_failure_prediction/data/engine_data.csv",
-    path_in_repo="data/engine_data.csv",
+api.upload_folder(
+    folder_path="mc_failure_prediction/data",
     repo_id=repo_id,
-    repo_type=repo_type
+    repo_type=repo_type,
 )
