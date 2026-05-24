@@ -32,13 +32,6 @@ X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.3, stratify=y, random_state=42
 )
 
-#local_dir = "mc_failure_prediction/data"
-
-# X_train.to_csv(f"{local_dir}/Xtrain.csv", index=False)
-# X_test.to_csv(f"{local_dir}/Xtest.csv", index=False)
-# y_train.to_csv(f"{local_dir}/ytrain.csv", index=False)
-# y_test.to_csv(f"{local_dir}/ytest.csv", index=False)
-
 X_train.to_csv("Xtrain.csv", index=False)
 X_test.to_csv("Xtest.csv", index=False)
 y_train.to_csv("ytrain.csv", index=False)
