@@ -15,11 +15,11 @@ Please enter the machine sensor details below to get a prediction.
 """)
 
 EngineRPM = st.number_input("Engine RPM", min_value=60, max_value=2500, value=70)
-LubOilPressure = st.number_input("Lub Oil Pressure", min_value=0.003, max_value=8, value=0.1,format="%.3f")
-FuelPressure = st.number_input("Fuel Pressure", min_value=0.003, max_value=21, value=0.01,format="%.3f")
-CoolantPressure = st.number_input("Coolant Pressure", min_value=0.002, max_value=8, value=0.2,format="%.3f")
-LubOilTemperature = st.number_input("Lub Oil Temperature", min_value=70, max_value=90, value=86,format="%.3f")
-CoolantTemperature = st.number_input("Coolant Temperature", min_value=70, max_value=200, value=100,format="%.3f")
+LubOilPressure = st.number_input("Lub Oil Pressure", min_value=0.003, max_value=8.000, value=0.100,format="%.3f")
+FuelPressure = st.number_input("Fuel Pressure", min_value=0.003, max_value=21.000, value=0.010,format="%.3f")
+CoolantPressure = st.number_input("Coolant Pressure", min_value=0.002, max_value=8.000, value=0.200,format="%.3f")
+LubOilTemperature = st.number_input("Lub Oil Temperature", min_value=70.000, max_value=90.000, value=86.00,format="%.3f")
+CoolantTemperature = st.number_input("Coolant Temperature", min_value=70.000, max_value=200.000, value=100.000,format="%.3f")
 
 # Assemble input into DataFrame
 input_data = pd.DataFrame([{
